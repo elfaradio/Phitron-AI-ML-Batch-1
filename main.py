@@ -1,13 +1,12 @@
-s = input().strip()
-# print(s
-# )
+class Phone:
+    category = "Electronics"
 
-mp = {}
+    def __init__(self, model, battery, camera):
+        self.model = model
+        self.battery = battery
+        self.camera = camera
 
-for i in s:
-    mp[i] = mp.get(i, 0)+1
 
+apple = Phone()
 
-# print(mp)
-for i in sorted(mp):
-    print(i, ":", mp[i])
+print(apple.category)
