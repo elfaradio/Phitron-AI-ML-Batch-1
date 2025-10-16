@@ -1,12 +1,27 @@
-class Phone:
-    category = "Electronics"
+# Getter and Setter MEthods
+class Person:
+    def __init__(self, name, age, balance):
+        self.name = name  # public variables
+        self._age = age  # protected variables -> Child class access
+        self.__balance = balance  # private -> only nijer class
 
-    def __init__(self, model, battery, camera):
-        self.model = model
-        self.battery = battery
-        self.camera = camera
+    def info(self):
+        print("Balance ", self.__balance)
+
+    def get_balance(self):
+        return self.__balance
+
+    def set_balance(self, money):
+        self.__balance += money
+
+# bayrer method
 
 
-apple = Phone()
+def get_name(person):
+    return person.name
 
-print(apple.category)
+
+person1 = Person("Rakib", 20, 10000)
+person1.set_balance(500)
+print(person1.name)
+print(get_name(person1))
