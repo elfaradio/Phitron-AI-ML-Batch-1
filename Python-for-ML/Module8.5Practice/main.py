@@ -25,7 +25,8 @@ class Car(Vehicle):
         super().__init__(typ, name, speed)
 
     def show_info(self):
-        print(f"{self.typ} {self._name}  {self.get_speed()} {self.classify()}")
+        print(
+            f"Type:{self.typ} Name:{self._name}  Speed:{self.get_speed()}KM/H {self.classify()}")
 
 
 class Bike(Vehicle):
@@ -33,7 +34,8 @@ class Bike(Vehicle):
         super().__init__(typ, name, speed)
 
     def show_info(self):
-        print(f"{self.typ} {self._name}  {self.get_speed()} {self.classify()}")
+        print(
+            f"Type:{self.typ} Name:{self._name}  Speed:{self.get_speed()}KM/H {self.classify()}")
 
 
 n = int(input())
