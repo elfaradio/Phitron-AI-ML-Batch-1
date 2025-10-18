@@ -1,0 +1,1 @@
+'''1. You have a list of temperatures recorded in Celsius. Your task is to: Create a NumPy array from the given list. Convert all temperatures from Celsius to Fahrenheit. The formula is F = C* 1.8 + 32. Print the new Fahrenheit array.'''
