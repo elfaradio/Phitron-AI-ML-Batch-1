@@ -1,7 +1,8 @@
 import numpy as np
 
 
-arr = np.random.randint(low=1, high=100, size=100)
-arr = arr.reshape(10, 10)
+matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
 
-print(arr)
+a = np.array(matrix)
+
+print(np.mean(a[:, 0]))
