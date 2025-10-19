@@ -1,4 +1,6 @@
-s = input().split()
+import numpy as np
 
-ans = max(s, key=lambda x: len(x) < 3)
-print(ans)
+A = np.array([[1, 2], [3, 4]])
+B = np.array([[5, 6], [7, 8]])
+
+print(np.dot(A, B))
