@@ -1,6 +1,18 @@
 import numpy as np
 
-A = np.array([[1, 2], [3, 4]])
-B = np.array([[5, 6], [7, 8]])
+# Example matrix
+A = np.array([[1, 2],
+              [3, 4],
+              [5, 6]])
 
-print(np.dot(A, B))
+# Compute the SVD
+U, S, Vt = np.linalg.svd(A)
+print(U, S, Vt)
+# Rank of A
+rank = np.linalg.matrix_rank(A)
+
+# Columns of U corresponding to non-zero singular values form a basis of the column space
+image_basis = U[:, :rank]
+
+print("Basis of the image (column space):")
+print(image_basis)
